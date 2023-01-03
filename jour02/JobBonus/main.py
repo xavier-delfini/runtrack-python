@@ -13,7 +13,7 @@ def triangle(AB, BC, AC):
             AB2 = AB * AB
             BC2 = BC * BC
             AC2 = AC * AC
-            AC2 = int(AC2)
+            
             # Calculs pour comparaison avec l'hypothénuse
             BC_AC = BC2 + AC2
             AB_AC = AB2 + AC2
