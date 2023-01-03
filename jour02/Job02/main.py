@@ -1,0 +1,5 @@
+def My_print_name(name):
+    print(name)
+
+My_print_name("Xavier")
+My_print_name("Nicolas")
