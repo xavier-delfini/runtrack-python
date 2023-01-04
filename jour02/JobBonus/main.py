@@ -1,11 +1,13 @@
 import math
+
+
 # Si ABC est un triangle rectangle en A, alors BC² = AB² + AC².
 # BC²= AB² +AC²   = 23,04 + 4 =27,04
 # AB=4,8 cm  AB²=23,04
 # BC=5,2
 # AC=2cm     AC²=4
 def triangle(AB, BC, AC):
-     if (AB > 0) and (BC > 0) and (AC > 0):
+    if (AB > 0) and (BC > 0) and (AC > 0):
 
         def rectangle(AB, BC, AC):
 
@@ -13,13 +15,13 @@ def triangle(AB, BC, AC):
             AB2 = AB * AB
             BC2 = BC * BC
             AC2 = AC * AC
-            
+
             # Calculs pour comparaison avec l'hypothénuse
             BC_AC = BC2 + AC2
             AB_AC = AB2 + AC2
             AB_BC = AB2 + BC2
 
-            # Application du théorème de pythagore avec comparaison approximative
+            # Application du théorème de pythagore avec comparaison approximative pour contourner les problèmes de float
             if math.isclose(BC_AC, AB2):
                 # Rectangle en C
                 return 1
@@ -30,7 +32,7 @@ def triangle(AB, BC, AC):
                 # Rectangle en B
                 return 3
             else:
-                #Non Rectangle
+                # Non Rectangle
                 return 0
 
         # Vérif si Equilatéral, isocèle ou non
@@ -42,7 +44,7 @@ def triangle(AB, BC, AC):
                 # Isocèle
                 return 2
             else:
-                #Aucun cotés équivalents
+                # Aucun cotés équivalents
                 return 0
 
         # Récupération des retour de fonction
@@ -62,8 +64,9 @@ def triangle(AB, BC, AC):
             print("Ce triangle est un triangle quelquonque")
         else:
             print("Une erreur est survenue")
-     else:
+    else:
         print("Votre triangle n'est pas possible")
+
 
 # Isocèle rectangle
 triangle(6, 6, 8.485281374249)
@@ -72,7 +75,7 @@ triangle(6, 6, 8.485281374249)
 triangle(3.6, 3.6, 5)
 
 # Quelquonque
-triangle(3, 4, 5)
+triangle(3, 4, 6)
 
 # Equilatéral
 triangle(3, 3, 3)
@@ -80,5 +83,5 @@ triangle(3, 3, 3)
 # Rectangle
 triangle(4.8, 5.2, 2)
 
-#Triangle impossible
-triangle(-3,-5,3)
+# Triangle impossible
+triangle(-3, -5, 3)
