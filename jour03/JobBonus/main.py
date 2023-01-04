@@ -15,7 +15,7 @@ def inverse(phrase):
         #On incrémente nos variables
         m-=1
         i+=1
-    #On converti nos 
+    #On converti notre liste en chaine de caratère
     inv_phrase=''.join(inv_phrase)
     print(inv_phrase)
 
