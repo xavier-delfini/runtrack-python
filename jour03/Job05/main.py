@@ -1,5 +1,5 @@
 def premier():
-    i = 0
+    i = 3
     while i < 1001:
         def calcul():
             j = 2
