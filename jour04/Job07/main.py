@@ -6,7 +6,6 @@ def liste():
     while n>i:
         if L[i] % 3 == 0:
             j+=1
-
         i+=1
     print(j)
 liste()

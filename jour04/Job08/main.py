@@ -9,5 +9,4 @@ def liste():
 
         i+=1
     print(j)
-    print(n)
 liste()
