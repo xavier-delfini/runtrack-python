@@ -2,7 +2,7 @@ def liste():
     L = [8,24,27,48,2,16,9,102,7,84,91]
     n=len(L)
     i=0
-    min=9999999999999999
+    min= L[0]
     max=0
     while n > i:
         if min > L[i] and max < L[i]:
