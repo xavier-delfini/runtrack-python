@@ -26,9 +26,10 @@ def my_long_word(taille,phrase):
                 début= dumper- taille_mot -1
                 fin= dumper
                 résultat= résultat +phrase[début:fin]
-                print(résultat)
+
             a=dumper
 
+        print(résultat)
     n = compteur_list()
 
     comparaison_mot()
