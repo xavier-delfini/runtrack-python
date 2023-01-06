@@ -5,6 +5,7 @@ def meli_memo():
     liste=list(mot)
     n=len(mot)
 
+    #Convertir le mot en nombre via l'utilisation de la base 26
     def calcul_mot(valeur):
         i=0
         résultat=0
@@ -13,8 +14,11 @@ def meli_memo():
             résultat=dump * (26 ** i) + résultat
             i+=1
         return résultat
-    def test_mots:
-        while
+    def test_mots():
+        j=0
+
+
+
 
 
     print(calcul_mot(mot))
