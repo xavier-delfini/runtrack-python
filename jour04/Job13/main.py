@@ -13,25 +13,22 @@ def liste():
                 break
         return n
 
-    n=compteur()
-    j=1
-    while j<=n:
+    n = compteur()
+    j = 1
+    while j <= n:
         i = 0
-        while i<=n:
-            print ("i")
-            print (i)
-            print ("n")
+        while i <= n:
+            print("i")
+            print(i)
+            print("n")
             print(n)
             if i != j and L[i] == L[j]:
                 del L[j]
-                n=compteur()
+                n = compteur()
 
+            i += 1
+        j += 1
+    print(L)
 
-
-
-
-            i+=1
-        j+=1
-    print (L)
 
 liste()
